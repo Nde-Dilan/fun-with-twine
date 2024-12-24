@@ -18,7 +18,7 @@ Explore the mysterious Omega Node station as Alex, a quantum physicist trapped w
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Nde-Dilan/quantum-paradox.git
+git clone https://github.com/Nde-Dilan/fun-with-twine.git
 ```
 
 2. Open `index.html` in your browser
