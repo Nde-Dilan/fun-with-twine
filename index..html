@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Le Paradoxe de la Singularité</title>
+  <audio id="bgMusic" autoplay loop>
+    <source src="./audio.ogg" type="audio/mpeg" />
+  </audio>
+  <style>
+    body {
+      font-family: "Courier New", monospace;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #000;
+      color: #0f0;
+    }
+
+    .passage {
+      background: rgba(0, 20, 0, 0.9);
+      padding: 20px;
+      border: 1px solid #0f0;
+      border-radius: 5px;
+      text-shadow: 0 0 5px #0f0;
+    }
+
+    .choice {
+      display: block;
+      margin: 15px 0;
+      padding: 10px 20px;
+      background: rgba(0, 40, 0, 0.9);
+      color: #0f0;
+      text-decoration: none;
+      border: 1px solid #0f0;
+      cursor: pointer;
+    }
+
+    .choice:hover {
+      background: rgba(0, 60, 0, 0.9);
+      text-shadow: 0 0 10px #0f0;
+    }
+
+    .end-popup,
+    .contribution-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup-content {
+      background: #2a2a2a;
+      padding: 2em;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .popup-content textarea {
+      width: 100%;
+      min-height: 150px;
+      margin: 1em 0;
+      background: #333;
+      color: #fff;
+      border: 1px solid #444;
+      padding: 0.5em;
+    }
+
+    .popup-content button {
+      margin: 0.5em;
+      padding: 0.5em 1em;
+      background: #4a9eff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .popup-content button:hover {
+      background: #3a8eef;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game"></div>
+  <div class="gtranslate_wrapper"></div>
+  <script>
+    async function showPassage(id) {
+      try {
+        const response = await fetch('passages.json');
+        const passages = await response.json();
+        const passage = passages[id];
+
+        let html = `<div class="passage"><p>${passage.text}</p>`;
+
+        if (!passage.choices || passage.choices.length === 0) {
+          html += `
+        <div class="end-popup">
+          <div class="popup-content">
+            <h3>Fin de cette branche</h3>
+            <p>Vous avez atteint la fin de cette partie de l'histoire.</p>
+            <button onclick="showContributeForm()">Contribuer à l'histoire</button>
+            <button onclick="returnToStart()">Retour au début</button>
+          </div>
+        </div>`;
+        } else {
+          passage.choices.forEach((choice) => {
+            html += `<a class="choice" onclick="showPassage('${choice.link}')">${choice.text}</a>`;
+          });
+        }
+
+
+        html += "</div>";
+
+        document.getElementById("game").innerHTML = html;
+      } catch (error) {
+        console.error('Error loading passage:', error);
+      }
+    }
+    document.addEventListener(
+      "click",
+      function () {
+        document.getElementById("bgMusic").play();
+      },
+      { once: true }
+    );
+    showPassage("start");
+  </script>
+
+
+
+  <script
+    id="gtranslate">window.gtranslateSettings = { "default_language": "fr", "native_language_names": true, "detect_browser_language": true, "languages": ["en", "fr", "it", "es"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_vertical_position": "top" }</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+</body>
+
+</html>
