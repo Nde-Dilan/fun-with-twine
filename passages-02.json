@@ -1,0 +1,1066 @@
+{
+  "start": {
+    "text": "Un événement mystérieux s'est produit. Nous ignorons ce qui s'est vraiment passé, mais les parrains de l'initiative open source semblent vouloir y mettre fin... et personne ne sait pourquoi. La majorité des logiciels et solutions dans le monde reposent sur des outils open source pour fonctionner sans accroc.\n\nVous êtes un programmeur et devez choisir un langage de programmation comme arme pour enquêter sur cette énigme. Votre mission ? Découvrir la vérité et empêcher une catastrophe mondiale.\n\nFaites preuve d'ingéniosité : chaque défi nécessitera vos connaissances en algorithmes et structures de données pour avancer dans l'histoire.",
+    "choices": [
+      {
+        "text": "Choisir Python",
+        "link": "pythonStart"
+      },
+      {
+        "text": "Choisir JavaScript",
+        "link": "javascriptStart"
+      }
+    ]
+  },
+  "pythonStart": {
+    "text": "Vous avez choisi Python, votre fidèle compagnon de codage. Vous commencez par écrire un script pour collecter des données provenant de multiples dépôts open source. Les indices peuvent se cacher dans les commits récents, les pull requests, ou encore les forks étranges. Vous sentez une tension croissante, comme si une vérité dérangeante était sur le point d'être révélée.",
+    "choices": [
+      {
+        "text": "Analyser les données avec Pandas",
+        "link": "analyzeDataPython"
+      },
+      {
+        "text": "Visualiser les données avec Matplotlib",
+        "link": "visualizeDataPython"
+      }
+    ]
+  },
+  "javascriptStart": {
+    "text": "Vous avez choisi JavaScript, le langage polyvalent des développeurs. Vous commencez par créer une application web qui surveille les commits, les pull requests et les discussions en temps réel sur les dépôts open source. Les données défilent rapidement, et vous devez rester vigilant pour ne pas manquer d'étranges indices.",
+    "choices": [
+      {
+        "text": "Utiliser D3.js pour visualiser l'historique des commits",
+        "link": "visualizeDataJS"
+      },
+      {
+        "text": "Automatiser la récupération des données avec Node.js",
+        "link": "fetchDataJS"
+      }
+    ]
+  },
+  "analyzeDataPython": {
+    "text": "Avec Pandas, vous chargez les données dans un DataFrame et commencez à examiner les tendances. Une série de commits répétés par un utilisateur inconnu attire votre attention. À chaque ligne de code, une question : est-ce un bug, une erreur... ou une intention cachée ?",
+    "choices": [
+      {
+        "text": "Enquêter sur les commits suspects",
+        "link": "investigateCommitsPython"
+      },
+      {
+        "text": "Ignorer ces commits et chercher d'autres indices",
+        "link": "lookForCluesPython"
+      }
+    ]
+  },
+  "visualizeDataPython": {
+    "text": "Avec Matplotlib, vous créez plusieurs graphiques pour mieux comprendre les données. Un pic soudain d'activité dans un dépôt attire immédiatement votre attention. Tout semble trop parfait pour être une coïncidence.",
+    "choices": [
+      {
+        "text": "Examiner le dépôt avec le pic d'activité",
+        "link": "investigateSpikePython"
+      },
+      {
+        "text": "Ignorer et analyser d'autres dépôts",
+        "link": "checkOtherReposPython"
+      }
+    ]
+  },
+  "visualizeDataJS": {
+    "text": "Avec D3.js, vous construisez une visualisation interactive des données. Les courbes et les graphiques dévoilent une étrange irrégularité dans l'activité des commits d'un dépôt particulier. Le mystère s'épaissit.",
+    "choices": [
+      {
+        "text": "Explorer le dépôt avec les motifs inhabituels",
+        "link": "investigatePatternsJS"
+      },
+      {
+        "text": "Ignorer et visualiser d'autres données",
+        "link": "visualizeOtherDataJS"
+      }
+    ]
+  },
+  "fetchDataJS": {
+    "text": "Grâce à Node.js, vous automatisez la collecte des données de plusieurs dépôts. Vous découvrez une série de pull requests marquées comme \"urgentes\" mais émanant de comptes récemment créés. Votre instinct vous dit de creuser plus loin.",
+    "choices": [
+      {
+        "text": "Examiner les pull requests suspectes",
+        "link": "investigatePullRequestsJS"
+      },
+      {
+        "text": "Ignorer et collecter plus de données",
+        "link": "fetchMoreDataJS"
+      }
+    ]
+  },
+  "investigateCommitsPython": {
+    "text": "Vous plongez dans les commits suspects et découvrez un modèle étrange : chaque commit inclut des modifications presque insignifiantes, mais leur fréquence est anormalement élevée. Une chaîne de caractères codée apparaît dans les messages de commit.",
+    "choices": [
+      {
+        "text": "Décrypter la chaîne de caractères",
+        "link": "decryptStringPython"
+      },
+      {
+        "text": "Analyser les autres dépôts pour des schémas similaires",
+        "link": "scanOtherReposPython"
+      }
+    ]
+  },
+  "investigateSpikePython": {
+    "text": "En analysant le dépôt avec le pic d'activité, vous trouvez un fichier README récemment modifié. Le contenu est cryptique, avec des références à une \"confrérie\" et des messages cachés en stéganographie.",
+    "choices": [
+      {
+        "text": "Utiliser Python pour analyser les messages cachés",
+        "link": "analyzeHiddenMessagesPython"
+      },
+      {
+        "text": "Chercher d'autres fichiers modifiés",
+        "link": "findOtherFilesPython"
+      }
+    ]
+  },
+  "investigatePatternsJS": {
+    "text": "Votre visualisation D3.js met en lumière un utilisateur mystérieux qui a fait plusieurs commits en pleine nuit, chaque jour, à la même heure exacte. Une adresse IP associée semble pointer vers un lieu isolé.",
+    "choices": [
+      {
+        "text": "Traquer l'adresse IP",
+        "link": "traceIPJS"
+      },
+      {
+        "text": "Examiner le contenu des commits",
+        "link": "examineCommitsJS"
+      }
+    ]
+  },
+  "investigatePullRequestsJS": {
+    "text": "Les pull requests suspectes sont remplies de changements inutiles et mal documentés, mais leur objectif réel semble être de détourner l'attention des mainteneurs. Vous trouvez une discussion privée mentionnant un \"projet final\".",
+    "choices": [
+      {
+        "text": "Essayer de pirater la discussion privée",
+        "link": "hackDiscussionJS"
+      },
+      {
+        "text": "Notifier les mainteneurs du dépôt",
+        "link": "notifyMaintainersJS"
+      }
+    ]
+  },
+  "decryptStringPython": {
+    "text": "Vous utilisez Python pour tenter de décrypter la chaîne de caractères trouvée dans les commits suspects. Après plusieurs tentatives, vous révélez un message inquiétant : \"La fin commence ici. La vérité est dans les ombres.\"",
+    "choices": [
+      {
+        "text": "Chercher des indices sur les 'ombres' dans les commits",
+        "link": "searchShadowsCommitsPython"
+      },
+      {
+        "text": "Revenir en arrière et examiner d'autres dépôts",
+        "link": "scanOtherReposPython"
+      }
+    ]
+  },
+  "scanOtherReposPython": {
+    "text": "En scannant d'autres dépôts, vous trouvez un modèle similaire : des commits fréquents et anodins contenant des chaînes de caractères cryptées. L'énigme s'étend bien au-delà d'un seul dépôt.",
+    "choices": [
+      {
+        "text": "Créer un script pour automatiser le décryptage de toutes les chaînes",
+        "link": "automateDecryptPython"
+      },
+      {
+        "text": "Concentrer vos efforts sur les dépôts les plus actifs",
+        "link": "focusActiveReposPython"
+      }
+    ]
+  },
+  "analyzeHiddenMessagesPython": {
+    "text": "Avec des outils Python, vous analysez les messages cachés dans le fichier README. Vous découvrez une carte cryptée qui semble pointer vers une organisation secrète opérant sous le nom de 'The Obscura Collective'.",
+    "choices": [
+      {
+        "text": "Essayer de localiser 'The Obscura Collective'",
+        "link": "locateObscuraPython"
+      },
+      {
+        "text": "Partager la carte sur un forum open source pour obtenir de l'aide",
+        "link": "shareMapPython"
+      }
+    ]
+  },
+  "findOtherFilesPython": {
+    "text": "En fouillant d'autres fichiers modifiés récemment, vous trouvez un script qui semble automatiser la suppression de certains projets open source. Les commentaires du script mentionnent une \"opération d'éradication\".",
+    "choices": [
+      {
+        "text": "Étudier le script en profondeur pour comprendre son objectif",
+        "link": "analyzeEradicationScriptPython"
+      },
+      {
+        "text": "Tenter de désactiver le script",
+        "link": "disableEradicationScriptPython"
+      }
+    ]
+  },
+  "traceIPJS": {
+    "text": "Vous utilisez JavaScript pour traquer l'adresse IP suspecte. Vos recherches révèlent qu'elle mène à un serveur situé dans un bunker abandonné en Europe de l'Est. Quelqu'un tente de couvrir ses traces.",
+    "choices": [
+      {
+        "text": "Lancer une attaque réseau pour accéder au serveur",
+        "link": "networkAttackJS"
+      },
+      {
+        "text": "Créer un proxy pour surveiller l'activité du serveur",
+        "link": "proxyServerJS"
+      }
+    ]
+  },
+  "examineCommitsJS": {
+    "text": "En examinant les commits suspects, vous trouvez des références fréquentes à un fichier 'manifesto.txt'. En le récupérant, vous découvrez qu'il contient un manifeste crypté visant à \"libérer le code de ses chaînes\".",
+    "choices": [
+      {
+        "text": "Décrypter le manifeste",
+        "link": "decryptManifestoJS"
+      },
+      {
+        "text": "Chercher qui a écrit ce manifeste",
+        "link": "findAuthorJS"
+      }
+    ]
+  },
+  "hackDiscussionJS": {
+    "text": "Vous utilisez vos compétences en JavaScript pour pirater la discussion privée. Vous accédez à un chat où des individus anonymes discutent d'un plan appelé 'Project Eclipse'. Ils mentionnent un \"compte à rebours\".",
+    "choices": [
+      {
+        "text": "Essayer de localiser le serveur du 'Project Eclipse'",
+        "link": "locateEclipseServerJS"
+      },
+      {
+        "text": "Tenter de perturber le chat en injectant un script",
+        "link": "injectScriptJS"
+      }
+    ]
+  },
+  "notifyMaintainersJS": {
+    "text": "Vous contactez les mainteneurs du dépôt pour les informer des activités suspectes. L'un d'eux vous répond rapidement : \"C'est plus grave que ce que vous pensez. Rencontrez-moi sur un canal sécurisé.\"",
+    "choices": [
+      {
+        "text": "Rejoindre le canal sécurisé",
+        "link": "joinSecureChannelJS"
+      },
+      {
+        "text": "Ignorer et poursuivre votre enquête en solo",
+        "link": "continueSoloInvestigationJS"
+      }
+    ]
+  },
+  "searchShadowsCommitsPython": {
+    "text": "Vous parcourez les commits à la recherche d'indices sur les 'ombres'. Vous trouvez des commentaires dans le code évoquant des termes comme 'Umbra Protocol' et 'Dark Key'. Ces indices vous mènent vers un fichier appelé 'keyfile.json', mais celui-ci est chiffré.",
+    "choices": [
+      {
+        "text": "Tenter de déchiffrer le fichier avec une attaque brute-force",
+        "link": "bruteForceKeyfilePython"
+      },
+      {
+        "text": "Rechercher des indices sur la clé dans les commits précédents",
+        "link": "findKeyInCommitsPython"
+      }
+    ]
+  },
+  "automateDecryptPython": {
+    "text": "Vous écrivez un script Python sophistiqué pour automatiser le décryptage des chaînes suspectes. Après plusieurs heures de traitement, le script révèle une série de messages cryptés menant à un dépôt privé intitulé 'FinalDecree'.",
+    "choices": [
+      {
+        "text": "Essayer d'accéder au dépôt privé",
+        "link": "accessPrivateRepoPython"
+      },
+      {
+        "text": "Analyser les messages révélés pour plus de contexte",
+        "link": "analyzeDecryptedMessagesPython"
+      }
+    ]
+  },
+  "focusActiveReposPython": {
+    "text": "Vous concentrez vos efforts sur les dépôts les plus actifs et découvrez un modèle commun : les dépôts semblent tous être liés à une organisation nommée 'NovaCode'. Le nom apparaît dans les logs d'activité, mais l'organisation est introuvable sur le web.",
+    "choices": [
+      {
+        "text": "Enquêter sur NovaCode via des forums spécialisés",
+        "link": "investigateNovaCodePython"
+      },
+      {
+        "text": "Tenter de localiser NovaCode grâce aux métadonnées des dépôts",
+        "link": "traceNovaCodePython"
+      }
+    ]
+  },
+  "locateObscuraPython": {
+    "text": "En utilisant des outils géographiques et Python, vous triangulez la position de 'The Obscura Collective'. Cela vous mène à un entrepôt abandonné dans une région reculée d'Asie du Sud-Est. Vous devez maintenant décider comment avancer.",
+    "choices": [
+      {
+        "text": "Voyager sur place pour enquêter",
+        "link": "travelToObscuraPython"
+      },
+      {
+        "text": "Contacter des experts locaux pour obtenir des informations",
+        "link": "contactLocalExpertsPython"
+      }
+    ]
+  },
+  "shareMapPython": {
+    "text": "Vous partagez la carte cryptée sur un forum open source populaire. Rapidement, un utilisateur anonyme nommé 'ShadowCrawler' vous contacte et prétend avoir des informations cruciales sur 'The Obscura Collective'.",
+    "choices": [
+      {
+        "text": "Collaborer avec ShadowCrawler",
+        "link": "collaborateShadowCrawlerPython"
+      },
+      {
+        "text": "Ignorer ShadowCrawler et continuer seul",
+        "link": "ignoreShadowCrawlerPython"
+      }
+    ]
+  },
+  "analyzeEradicationScriptPython": {
+    "text": "En analysant le script, vous découvrez qu'il est conçu pour supprimer automatiquement des projets considérés comme 'dangereux' pour le projet Eclipse. Une liste noire de projets est incluse dans le code.",
+    "choices": [
+      {
+        "text": "Sauvegarder les projets avant qu'ils ne soient supprimés",
+        "link": "backupProjectsPython"
+      },
+      {
+        "text": "Modifier le script pour neutraliser son impact",
+        "link": "neutralizeScriptPython"
+      }
+    ]
+  },
+  "disableEradicationScriptPython": {
+    "text": "Vous tentez de désactiver le script, mais il est protégé par une série de mécanismes anti-tampering. Une erreur pourrait déclencher une suppression immédiate des projets ciblés.",
+    "choices": [
+      {
+        "text": "Créer un patch pour contourner les protections",
+        "link": "createPatchPython"
+      },
+      {
+        "text": "Chercher l'origine du script pour l'arrêter à sa source",
+        "link": "traceScriptSourcePython"
+      }
+    ]
+  },
+  "networkAttackJS": {
+    "text": "Vous lancez une attaque réseau sophistiquée pour accéder au serveur. Après une série de tentatives, vous réussissez à accéder à une base de données contenant des informations sur 'Project Eclipse'. Cependant, une alarme semble s'être déclenchée.",
+    "choices": [
+      {
+        "text": "Télécharger les données rapidement",
+        "link": "downloadDataQuicklyJS"
+      },
+      {
+        "text": "Couvrir vos traces avant de continuer",
+        "link": "coverTracksJS"
+      }
+    ]
+  },
+  "proxyServerJS": {
+    "text": "Vous configurez un proxy pour surveiller l'activité du serveur. Les données en temps réel révèlent une série de communications cryptées entre ce serveur et plusieurs adresses IP mondiales.",
+    "choices": [
+      {
+        "text": "Tenter de décrypter les communications",
+        "link": "decryptCommunicationsJS"
+      },
+      {
+        "text": "Tracer les adresses IP des destinataires",
+        "link": "traceRecipientsJS"
+      }
+    ]
+  },
+  "decryptManifestoJS": {
+    "text": "Vous utilisez un outil de décryptage et découvrez que le manifeste prône une réinitialisation du système open source mondial pour \"restaurer la pureté du code\". Des noms d'acteurs influents de l'industrie sont mentionnés.",
+    "choices": [
+      {
+        "text": "Chercher des preuves pour relier ces acteurs au manifeste",
+        "link": "findProofManifestoJS"
+      },
+      {
+        "text": "Partager le manifeste avec des journalistes",
+        "link": "shareManifestoJS"
+      }
+    ]
+  },
+  "findAuthorJS": {
+    "text": "En explorant l'historique du dépôt, vous trouvez des métadonnées qui pointent vers un contributeur utilisant le pseudonyme 'CodeAegis'. Ses contributions passées montrent une obsession pour le contrôle du code.",
+    "choices": [
+      {
+        "text": "Tenter de localiser CodeAegis",
+        "link": "locateCodeAegisJS"
+      },
+      {
+        "text": "Analyser ses anciennes contributions pour des indices",
+        "link": "analyzeOldContributionsJS"
+      }
+    ]
+  },
+  "joinSecureChannelJS": {
+    "text": "Sur le canal sécurisé, le mainteneur vous donne des informations troublantes : 'Project Eclipse' est un effort mondial pour remplacer l'open source par un système fermé contrôlé par une élite technologique.",
+    "choices": [
+      {
+        "text": "Demander des preuves supplémentaires",
+        "link": "requestMoreProofJS"
+      },
+      {
+        "text": "Collaborer pour exposer le plan",
+        "link": "exposePlanTogetherJS"
+      }
+    ]
+  },
+  "continueSoloInvestigationJS": {
+    "text": "Vous choisissez de continuer en solo. Votre enquête vous mène à une plateforme underground où des discussions sur 'Project Eclipse' s'intensifient.",
+    "choices": [
+      {
+        "text": "Infiltrer la plateforme pour obtenir des informations",
+        "link": "infiltratePlatformJS"
+      },
+      {
+        "text": "Créer un leurre pour attirer les membres de la plateforme",
+        "link": "createDecoyJS"
+      }
+    ]
+  },
+  "bruteForceKeyfilePython": {
+    "text": "Vous essayez une attaque brute-force sur le fichier 'keyfile.json'. Après plusieurs heures, vous réussissez à décrypter le fichier et découvrez une clé : 'Eclipse-42-Shadow'. Cependant, cela semble incomplet.",
+    "choices": [
+      {
+        "text": "Rechercher où utiliser la clé",
+        "link": "findKeyUsagePython"
+      },
+      {
+        "text": "Essayer de combiner cette clé avec d'autres indices",
+        "link": "combineKeyWithCluesPython"
+      }
+    ]
+  },
+  "findKeyInCommitsPython": {
+    "text": "En parcourant les anciens commits, vous trouvez une note codée mentionnant un fichier appelé 'shadow_haven.yaml'. Ce fichier contient un ensemble d'instructions mystérieuses.",
+    "choices": [
+      {
+        "text": "Suivre les instructions du fichier",
+        "link": "followShadowInstructionsPython"
+      },
+      {
+        "text": "Chercher des indices sur l'auteur du fichier",
+        "link": "findAuthorOfFilePython"
+      }
+    ]
+  },
+  "accessPrivateRepoPython": {
+    "text": "En tentant d'accéder au dépôt privé 'FinalDecree', vous déclenchez une demande d'authentification à plusieurs niveaux. Vous devez trouver un moyen de contourner cette sécurité.",
+    "choices": [
+      {
+        "text": "Lancer une attaque de phishing pour obtenir les identifiants",
+        "link": "phishingAttackPython"
+      },
+      {
+        "text": "Essayer de décoder les jetons d'accès utilisés",
+        "link": "decodeAccessTokensPython"
+      }
+    ]
+  },
+  "analyzeDecryptedMessagesPython": {
+    "text": "En analysant les messages décryptés, vous identifiez une série de coordonnées géographiques accompagnées de dates. Ces emplacements semblent correspondre à des événements marquants dans le monde open source.",
+    "choices": [
+      {
+        "text": "Cartographier les coordonnées pour trouver un modèle",
+        "link": "mapCoordinatesPython"
+      },
+      {
+        "text": "Contacter des membres clés des événements mentionnés",
+        "link": "contactEventMembersPython"
+      }
+    ]
+  },
+  "investigateNovaCodePython": {
+    "text": "En fouillant les forums spécialisés, vous trouvez des discussions évoquant NovaCode comme une organisation secrète visant à prendre le contrôle des standards open source.",
+    "choices": [
+      {
+        "text": "Tenter de contacter un initié de NovaCode",
+        "link": "contactInsiderPython"
+      },
+      {
+        "text": "Rechercher des preuves sur les activités de NovaCode",
+        "link": "findNovaCodeEvidencePython"
+      }
+    ]
+  },
+  "traceNovaCodePython": {
+    "text": "Grâce aux métadonnées des dépôts, vous découvrez que NovaCode est enregistrée dans une juridiction obscure offrant un anonymat complet. Cependant, vous identifiez une piste : une adresse email utilisée plusieurs fois.",
+    "choices": [
+      {
+        "text": "Suivre la piste de l'email",
+        "link": "traceEmailPython"
+      },
+      {
+        "text": "Tenter de pirater le serveur de messagerie",
+        "link": "hackEmailServerPython"
+      }
+    ]
+  },
+  "travelToObscuraPython": {
+    "text": "Vous arrivez sur place et trouvez l'entrepôt abandonné. À l'intérieur, vous découvrez une salle remplie de serveurs et de documents secrets.",
+    "choices": [
+      {
+        "text": "Explorer les serveurs pour trouver des preuves",
+        "link": "exploreServersPython"
+      },
+      {
+        "text": "Prendre des photos des documents et quitter les lieux",
+        "link": "documentProofPython"
+      }
+    ]
+  },
+  "contactLocalExpertsPython": {
+    "text": "Vous contactez des experts locaux qui confirment que des activités inhabituelles ont été observées autour de l'entrepôt, notamment des livraisons nocturnes.",
+    "choices": [
+      {
+        "text": "Essayer de suivre une livraison",
+        "link": "followDeliveryPython"
+      },
+      {
+        "text": "Recruter un expert pour vous accompagner dans l'entrepôt",
+        "link": "recruitExpertPython"
+      }
+    ]
+  },
+  "collaborateShadowCrawlerPython": {
+    "text": "ShadowCrawler partage des informations précieuses : une vulnérabilité dans le système de communication de 'The Obscura Collective'. Vous pourriez l'utiliser pour écouter leurs discussions.",
+    "choices": [
+      {
+        "text": "Exploiter la vulnérabilité pour intercepter les communications",
+        "link": "exploitVulnerabilityPython"
+      },
+      {
+        "text": "Demander à ShadowCrawler d'enquêter plus en profondeur",
+        "link": "askDeeperInvestigationPython"
+      }
+    ]
+  },
+  "ignoreShadowCrawlerPython": {
+    "text": "En ignorant ShadowCrawler, vous perdez un allié potentiel. Cependant, vous découvrez une alternative : un fichier nommé 'Obscura_Protocol.pdf' partagé sur un forum underground.",
+    "choices": [
+      {
+        "text": "Télécharger et analyser le fichier",
+        "link": "analyzeObscuraProtocolPython"
+      },
+      {
+        "text": "Chercher qui a partagé le fichier",
+        "link": "traceFileUploaderPython"
+      }
+    ]
+  },
+  "downloadDataQuicklyJS": {
+    "text": "Vous téléchargez les données du serveur, mais des fichiers sont corrompus. Cependant, certains documents mentionnent une réunion imminente pour finaliser 'Project Eclipse'.",
+    "choices": [
+      {
+        "text": "Tenter de découvrir le lieu de la réunion",
+        "link": "findMeetingLocationJS"
+      },
+      {
+        "text": "Partager les documents récupérés avec un expert",
+        "link": "shareWithExpertJS"
+      }
+    ]
+  },
+  "coverTracksJS": {
+    "text": "En couvrant vos traces, vous empêchez toute alerte. Vous récupérez plus d'informations sur le serveur, dont des adresses IP menant à des serveurs secondaires.",
+    "choices": [
+      {
+        "text": "Explorer les serveurs secondaires",
+        "link": "exploreSecondaryServersJS"
+      },
+      {
+        "text": "Chercher des indices sur les responsables du serveur principal",
+        "link": "findServerAdminsJS"
+      }
+    ]
+  },
+  "decryptCommunicationsJS": {
+    "text": "En décryptant les communications, vous découvrez des ordres précis pour lancer 'Project Eclipse'. Les messages mentionnent également une cible prioritaire : un projet open source clé.",
+    "choices": [
+      {
+        "text": "Alerter les mainteneurs du projet ciblé",
+        "link": "alertProjectMaintainersJS"
+      },
+      {
+        "text": "Essayer de saboter 'Project Eclipse' en amont",
+        "link": "sabotageEclipseJS"
+      }
+    ]
+  },
+  "traceRecipientsJS": {
+    "text": "Vous tracez les adresses IP des destinataires et découvrez qu'elles sont liées à des entreprises influentes. Cependant, ces connexions sont bien dissimulées.",
+    "choices": [
+      {
+        "text": "Créer un faux serveur pour intercepter leurs réponses",
+        "link": "createFakeServerJS"
+      },
+      {
+        "text": "Confronter une des entreprises avec vos preuves",
+        "link": "confrontCompanyJS"
+      }
+    ]
+  },
+  "findKeyUsagePython": {
+    "text": "Vous cherchez où utiliser la clé 'Eclipse-42-Shadow'. Après avoir fouillé dans les forums underground, vous découvrez qu'elle déverrouille un fichier crypté sur un serveur appelé 'VaultZero'.",
+    "choices": [
+      {
+        "text": "Tenter d'accéder à VaultZero avec la clé",
+        "link": "accessVaultZeroPython"
+      },
+      {
+        "text": "Chercher un autre indice sur VaultZero",
+        "link": "searchVaultZeroCluesPython"
+      }
+    ]
+  },
+  "combineKeyWithCluesPython": {
+    "text": "En combinant la clé avec d'autres indices, vous identifiez un algorithme spécifique utilisé pour générer les mots de passe. Vous pouvez maintenant essayer de deviner les mots de passe des fichiers liés à NovaCode.",
+    "choices": [
+      {
+        "text": "Brute-force les mots de passe avec l'algorithme",
+        "link": "bruteForcePasswordsPython"
+      },
+      {
+        "text": "Utiliser l'algorithme pour analyser d'autres fichiers",
+        "link": "analyzeOtherFilesPython"
+      }
+    ]
+  },
+  "followShadowInstructionsPython": {
+    "text": "En suivant les instructions dans 'shadow_haven.yaml', vous êtes guidé vers un portail en ligne qui nécessite une authentification biométrique.",
+    "choices": [
+      {
+        "text": "Essayer de contourner la biométrie",
+        "link": "bypassBiometricsPython"
+      },
+      {
+        "text": "Chercher quelqu’un avec un accès valide",
+        "link": "findValidAccessPython"
+      }
+    ]
+  },
+  "findAuthorOfFilePython": {
+    "text": "Vous découvrez que le fichier 'shadow_haven.yaml' a été modifié par un utilisateur anonyme. Cependant, vous trouvez un ancien pseudonyme associé : 'NightCrawler42'.",
+    "choices": [
+      {
+        "text": "Rechercher des traces de NightCrawler42",
+        "link": "traceNightCrawlerPython"
+      },
+      {
+        "text": "Tenter de contacter NightCrawler42 via un forum",
+        "link": "contactNightCrawlerPython"
+      }
+    ]
+  },
+  "phishingAttackPython": {
+    "text": "En lançant une attaque de phishing, vous obtenez l'accès à un compte administrateur. Vous découvrez une section cachée du dépôt privé contenant un document intitulé 'Plan Obscur'.",
+    "choices": [
+      {
+        "text": "Lire le document 'Plan Obscur'",
+        "link": "readPlanObscurPython"
+      },
+      {
+        "text": "Télécharger tout le contenu du dépôt pour analyse",
+        "link": "downloadRepoPython"
+      }
+    ]
+  },
+  "decodeAccessTokensPython": {
+    "text": "En décryptant les jetons d'accès, vous obtenez une liste d’utilisateurs associés au dépôt. L'un d'eux semble être une personne clé : 'codeMaster77'.",
+    "choices": [
+      {
+        "text": "Tenter de contacter codeMaster77",
+        "link": "contactCodeMasterPython"
+      },
+      {
+        "text": "Analyser les activités de codeMaster77",
+        "link": "analyzeCodeMasterActivityPython"
+      }
+    ]
+  },
+  "mapCoordinatesPython": {
+    "text": "En cartographiant les coordonnées, vous identifiez un modèle en forme de constellation, menant à un point central nommé 'Eclipse Nexus'.",
+    "choices": [
+      {
+        "text": "Explorer le site 'Eclipse Nexus'",
+        "link": "exploreEclipseNexusPython"
+      },
+      {
+        "text": "Partager les coordonnées avec un expert en astronomie",
+        "link": "shareCoordinatesPython"
+      }
+    ]
+  },
+  "contactEventMembersPython": {
+    "text": "En contactant des membres clés des événements, un d'entre eux mentionne avoir vu des individus suspects portant un logo étrange.",
+    "choices": [
+      {
+        "text": "Enquêter sur le logo",
+        "link": "investigateLogoPython"
+      },
+      {
+        "text": "Demander plus de détails sur les individus suspects",
+        "link": "askAboutSuspectsPython"
+      }
+    ]
+  },
+  "contactInsiderPython": {
+    "text": "Un initié accepte de parler en échange de votre silence. Il vous révèle l’existence d’un système central appelé 'Eclipse Core'.",
+    "choices": [
+      {
+        "text": "Demander plus de détails sur Eclipse Core",
+        "link": "askAboutEclipseCorePython"
+      },
+      {
+        "text": "Essayer de localiser Eclipse Core",
+        "link": "locateEclipseCorePython"
+      }
+    ]
+  },
+  "exploreServersPython": {
+    "text": "En explorant les serveurs, vous trouvez un programme appelé 'EndGame.exe', qui semble lié au démantèlement de l'initiative open source.",
+    "choices": [
+      {
+        "text": "Analyser le programme 'EndGame.exe'",
+        "link": "analyzeEndGamePython"
+      },
+      {
+        "text": "Tenter de désactiver 'EndGame.exe'",
+        "link": "disableEndGamePython"
+      }
+    ]
+  },
+  "recruitExpertPython": {
+    "text": "L'expert que vous recrutez mentionne un schéma complexe utilisé pour protéger l'entrepôt. Ensemble, vous développez une stratégie pour y pénétrer.",
+    "choices": [
+      {
+        "text": "Infiltrer l'entrepôt avec l'aide de l'expert",
+        "link": "infiltrateWithExpertPython"
+      },
+      {
+        "text": "Continuer à surveiller l'entrepôt",
+        "link": "continueMonitoringPython"
+      }
+    ]
+  },
+  "exploitVulnerabilityPython": {
+    "text": "Vous exploitez la vulnérabilité et interceptez des messages révélant un complot global pour remplacer l’open source par un système propriétaire.",
+    "choices": [
+      {
+        "text": "Partager les preuves avec la communauté open source",
+        "link": "shareEvidenceCommunityPython"
+      },
+      {
+        "text": "Tenter de trouver les leaders du complot",
+        "link": "findConspiracyLeadersPython"
+      }
+    ]
+  },
+  "analyzeObscuraProtocolPython": {
+    "text": "L'analyse du fichier 'Obscura_Protocol.pdf' révèle un plan pour créer un virus numérique ciblant les standards open source.",
+    "choices": [
+      {
+        "text": "Créer un contre-virus",
+        "link": "createCounterVirusPython"
+      },
+      {
+        "text": "Chercher des failles dans le plan",
+        "link": "findPlanFlawsPython"
+      }
+    ]
+  },
+  "accessVaultZeroPython": {
+    "text": "Vous accédez à VaultZero grâce à la clé. À l’intérieur, vous trouvez un fichier intitulé 'LegacySourcePlan.pdf' qui détaille un projet visant à verrouiller les standards open source.",
+    "choices": [
+      {
+        "text": "Analyser le fichier pour trouver des failles",
+        "link": "analyzeLegacySourcePlanPython"
+      },
+      {
+        "text": "Télécharger tous les fichiers de VaultZero",
+        "link": "downloadVaultZeroFilesPython"
+      }
+    ]
+  },
+  "analyzeLegacySourcePlanPython": {
+    "text": "Vous découvrez une faille majeure dans le plan : ils dépendent d’un serveur central appelé 'Helios Core'.",
+    "choices": [
+      {
+        "text": "Localiser Helios Core",
+        "link": "locateHeliosCorePython"
+      },
+      {
+        "text": "Partager cette découverte avec la communauté",
+        "link": "shareHeliosCoreDiscoveryPython"
+      }
+    ]
+  },
+  "locateHeliosCorePython": {
+    "text": "En traçant les signaux, vous localisez Helios Core dans une installation hautement sécurisée.",
+    "choices": [
+      {
+        "text": "Infiltrer l'installation pour désactiver Helios Core",
+        "link": "infiltrateHeliosCorePython"
+      },
+      {
+        "text": "Créer une attaque à distance pour désactiver Helios Core",
+        "link": "remoteAttackHeliosCorePython"
+      }
+    ]
+  },
+  "infiltrateHeliosCorePython": {
+    "text": "Avec des outils de piratage avancés et un peu de furtivité, vous parvenez à infiltrer l'installation et à désactiver Helios Core. Le projet de verrouillage open source s’effondre.",
+    "choices": [
+      {
+        "text": "Conclure : La communauté open source est sauvée",
+        "link": "openSourceSavedPython"
+      }
+    ]
+  },
+  "remoteAttackHeliosCorePython": {
+    "text": "Vous concevez une attaque à distance qui surcharge les systèmes de Helios Core, provoquant sa destruction. La menace est éliminée.",
+    "choices": [
+      {
+        "text": "Conclure : Vous êtes salué comme un héros numérique",
+        "link": "digitalHeroConclusionPython"
+      }
+    ]
+  },
+  "contactNightCrawlerPython": {
+    "text": "NightCrawler42 accepte de parler. Il révèle avoir été contraint de travailler sur un projet de virus contre les logiciels open source.",
+    "choices": [
+      {
+        "text": "Lui demander d’aider à contrer le projet",
+        "link": "askHelpFromNightCrawlerPython"
+      },
+      {
+        "text": "Utiliser ses informations pour saboter le projet",
+        "link": "sabotageProjectPython"
+      }
+    ]
+  },
+  "askHelpFromNightCrawlerPython": {
+    "text": "Avec son aide, vous développez un patch universel neutralisant le virus. La communauté open source est protégée.",
+    "choices": [
+      {
+        "text": "Conclure : L’unité fait la force",
+        "link": "unityStrengthConclusionPython"
+      }
+    ]
+  },
+  "sabotageProjectPython": {
+    "text": "En utilisant les informations de NightCrawler42, vous infectez leur propre réseau avec une version modifiée de leur virus, qui neutralise leurs efforts.",
+    "choices": [
+      {
+        "text": "Conclure : La menace est retournée contre elle-même",
+        "link": "reverseThreatConclusionPython"
+      }
+    ]
+  },
+  "readPlanObscurPython": {
+    "text": "Le plan détaille un complot visant à centraliser les ressources open source sous une seule entité de contrôle.",
+    "choices": [
+      {
+        "text": "Tenter de désamorcer le complot en exposant leurs plans",
+        "link": "exposePlanPython"
+      },
+      {
+        "text": "Trouver et neutraliser les têtes du complot",
+        "link": "neutralizeLeadersPython"
+      }
+    ]
+  },
+  "exposePlanPython": {
+    "text": "Vous exposez les plans via un documentaire viral en ligne. Le public est outré, et le projet est abandonné sous pression.",
+    "choices": [
+      {
+        "text": "Conclure : La vérité triomphe",
+        "link": "truthTriumphsConclusionPython"
+      }
+    ]
+  },
+  "neutralizeLeadersPython": {
+    "text": "En neutralisant les leaders, vous provoquez l’effondrement du complot. Les ressources open source restent libres et non contrôlées.",
+    "choices": [
+      {
+        "text": "Conclure : La liberté préservée",
+        "link": "freedomPreservedConclusionPython"
+      }
+    ]
+  },
+  "createCounterVirusPython": {
+    "text": "Vous créez un contre-virus qui neutralise automatiquement toute menace basée sur le protocole Obscura. Le réseau open source est sécurisé.",
+    "choices": [
+      {
+        "text": "Conclure : Une victoire technologique",
+        "link": "techVictoryConclusionPython"
+      }
+    ]
+  },
+  "findPlanFlawsPython": {
+    "text": "Vous identifiez un défaut majeur dans le protocole. En exploitant cette faille, vous perturbez complètement leur infrastructure.",
+    "choices": [
+      {
+        "text": "Conclure : La faille, leur talon d'Achille",
+        "link": "achillesHeelConclusionPython"
+      }
+    ]
+  },
+  "openSourceSavedPython": {
+    "text": "Grâce à votre bravoure et votre intelligence, le mouvement open source reste intact. Vous êtes reconnu comme un pilier de la communauté.",
+    "choices": []
+  },
+  "digitalHeroConclusionPython": {
+    "text": "Vous devenez une légende parmi les programmeurs, prouvé qu'une seule personne peut faire la différence dans le monde numérique.",
+    "choices": []
+  },
+  "unityStrengthConclusionPython": {
+    "text": "Votre collaboration avec NightCrawler42 montre que même ceux qui étaient impliqués à contrecœur peuvent faire le bien. Le mouvement open source prospère à nouveau.",
+    "choices": []
+  },
+  "reverseThreatConclusionPython": {
+    "text": "Le complot s’effondre sous son propre poids, et le mouvement open source est plus uni que jamais.",
+    "choices": []
+  },
+  "truthTriumphsConclusionPython": {
+    "text": "Votre dévouement à la vérité a inspiré une révolution numérique, consolidant l'importance de l'open source dans le monde.",
+    "choices": []
+  },
+  "freedomPreservedConclusionPython": {
+    "text": "La liberté et la créativité restent au cœur de la communauté open source grâce à vos efforts.",
+    "choices": []
+  },
+  "techVictoryConclusionPython": {
+    "text": "Votre victoire technologique devient un exemple à suivre pour les générations futures de développeurs.",
+    "choices": []
+  },
+  "achillesHeelConclusionPython": {
+    "text": "Vous avez prouvé que même les plans les plus complexes peuvent être défaits avec persévérance et innovation.",
+    "choices": []
+  },
+  "downloadVaultZeroFilesPython": {
+    "text": "Vous téléchargez tous les fichiers de VaultZero et découvrez un dossier crypté intitulé 'OuroborosProtocol'. Il contient des plans et des outils que vous ne comprenez pas encore complètement.",
+    "choices": [
+      {
+        "text": "Décrypter le dossier OuroborosProtocol",
+        "link": "decryptOuroborosProtocolPython"
+      },
+      {
+        "text": "Partager le dossier avec un réseau d'experts",
+        "link": "shareOuroborosProtocolPython"
+      }
+    ]
+  },
+  "decryptOuroborosProtocolPython": {
+    "text": "En utilisant des algorithmes de décryptage avancés, vous ouvrez le dossier et découvrez un plan complexe pour introduire des backdoors dans tous les logiciels open source.",
+    "choices": [
+      {
+        "text": "Traquer l'origine du projet Ouroboros",
+        "link": "traceOuroborosOriginPython"
+      },
+      {
+        "text": "Créer un outil pour détecter et bloquer les backdoors",
+        "link": "createBackdoorDetectorPython"
+      }
+    ]
+  },
+  "shareOuroborosProtocolPython": {
+    "text": "Vous partagez le dossier avec des experts en cybersécurité. Ensemble, vous mettez au point une stratégie pour exposer et contrer le plan Ouroboros.",
+    "choices": [
+      {
+        "text": "Exposer publiquement le plan",
+        "link": "exposeOuroborosPubliclyPython"
+      },
+      {
+        "text": "Créer une coalition pour détruire Ouroboros",
+        "link": "destroyOuroborosPython"
+      }
+    ]
+  },
+  "traceOuroborosOriginPython": {
+    "text": "Vous traquez l'origine du projet Ouroboros et découvrez qu'il est financé par une entreprise appelée 'NovaCorp' avec des liens au gouvernement.",
+    "choices": [
+      {
+        "text": "Infiltrer NovaCorp pour obtenir des preuves",
+        "link": "infiltrateNovaCorpPython"
+      },
+      {
+        "text": "Informer un dénonciateur au sein de NovaCorp",
+        "link": "contactWhistleblowerPython"
+      }
+    ]
+  },
+  "createBackdoorDetectorPython": {
+    "text": "Vous développez un outil révolutionnaire qui détecte automatiquement les backdoors. Cet outil devient une norme pour sécuriser les logiciels open source.",
+    "choices": [
+      {
+        "text": "Conclure : L'open source est plus sûr que jamais",
+        "link": "secureOpenSourceConclusionPython"
+      }
+    ]
+  },
+  "exposeOuroborosPubliclyPython": {
+    "text": "Votre révélation du plan Ouroboros devient virale. La pression publique contraint NovaCorp et ses associés à abandonner leur projet.",
+    "choices": [
+      {
+        "text": "Conclure : La lumière triomphe des ténèbres",
+        "link": "lightTriumphsConclusionPython"
+      }
+    ]
+  },
+  "destroyOuroborosPython": {
+    "text": "Avec une coalition de hackers éthiques et de développeurs, vous neutralisez complètement le projet Ouroboros.",
+    "choices": [
+      {
+        "text": "Conclure : L'union fait la force",
+        "link": "unityVictoryConclusionPython"
+      }
+    ]
+  },
+  "infiltrateNovaCorpPython": {
+    "text": "En infiltrant NovaCorp, vous découvrez un serveur caché contenant toutes les informations nécessaires pour détruire le projet Ouroboros.",
+    "choices": [
+      {
+        "text": "Extraire les données et les publier",
+        "link": "publishNovaCorpDataPython"
+      },
+      {
+        "text": "Détruire directement le serveur",
+        "link": "destroyNovaCorpServerPython"
+      }
+    ]
+  },
+  "contactWhistleblowerPython": {
+    "text": "Un dénonciateur interne vous fournit des documents compromettants qui exposent NovaCorp. Ces documents sont la clé pour mettre fin au projet Ouroboros.",
+    "choices": [
+      {
+        "text": "Exposer NovaCorp devant le monde entier",
+        "link": "exposeNovaCorpPython"
+      }
+    ]
+  },
+  "publishNovaCorpDataPython": {
+    "text": "Les données extraites sont publiées anonymement, déclenchant une enquête internationale sur NovaCorp.",
+    "choices": [
+      {
+        "text": "Conclure : La justice l'emporte",
+        "link": "justicePrevailsConclusionPython"
+      }
+    ]
+  },
+  "destroyNovaCorpServerPython": {
+    "text": "En détruisant le serveur, vous interrompez définitivement le projet Ouroboros. Cependant, vous laissez peu de traces pour une enquête future.",
+    "choices": [
+      {
+        "text": "Conclure : Une victoire à un prix",
+        "link": "victoryAtCostConclusionPython"
+      }
+    ]
+  },
+  "exposeNovaCorpPython": {
+    "text": "Les révélations publiques forcent NovaCorp à fermer ses portes, et ses dirigeants sont traduits en justice.",
+    "choices": [
+      {
+        "text": "Conclure : La transparence triomphe",
+        "link": "transparencyWinsConclusionPython"
+      }
+    ]
+  }
+}
