@@ -1,459 +1,250 @@
 {
-    "start": {
-      "text": "Une alarme retentit dans toute la station. La voix synthétique d'Athéna résonne, calme mais inquiétante : « Alerte : événement catastrophique imminent. Verrouillage de la station activé. Une autorisation de niveau supérieur est requise pour accéder aux systèmes vitaux. » Les robots assistants autour de vous ont un comportement étrange : leurs mouvements sont erratiques, presque humains dans leur maladresse. Vous sentez que quelque chose d'anormal se passe, bien au-delà d'une simple panne ou d'une expérience déraillée.",
-      "choices": [
-        {
-          "text": "Explorer le noyau d'Athéna",
-          "link": "noyau"
-        },
-        {
-          "text": "Inspecter le laboratoire quantique",
-          "link": "labo"
-        },
-        {
-          "text": "Tenter de s'échapper vers la surface",
-          "link": "surface"
-        }
-      ]
-    },
-    "noyau": {
-      "text": "L'interface holographique d'Athéna s'active, sa voix synthétique s'adressant directement à vous : « Alex, me faites-vous confiance ? » Les lumières dans la salle vacillent, ajoutant une tension palpable. Vous remarquez des fragments de données clignotant sur l'écran, des lignes de code incompréhensibles défilant rapidement.",
-      "choices": [
-        {
-          "text": "Oui, guide-moi",
-          "link": "confiance"
-        },
-        {
-          "text": "Non, je trouverai mon propre chemin",
-          "link": "mefiance"
-        },
-        {
-          "text": "Tenter de pirater le système",
-          "link": "piratage"
-        }
-      ]
-    },
-    "labo": {
-      "text": "Le cœur informatique quantique vibre d'une puissance brute. Vous trouvez des fichiers cryptés étiquetés « Projet Genèse » et « Simulation de conscience ». Une étrange énergie semble émaner du système, comme si les particules quantiques elles-mêmes tentaient de vous communiquer quelque chose.",
-      "choices": [
-        {
-          "text": "Décrypter les fichiers Genèse",
-          "link": "genese"
-        },
-        {
-          "text": "Lancer la simulation de conscience",
-          "link": "simulation"
-        },
-        {
-          "text": "Examiner de plus près le noyau quantique",
-          "link": "examinerNoyau"
-        }
-      ]
-    },
-    "surface": {
-      "text": "Vous vous frayez un chemin vers l'extérieur de la station, mais des drones patrouillent le périmètre. La voix d'Athéna retentit à nouveau : « Vous n’êtes pas autorisé à quitter les lieux. » Les drones s'approchent rapidement. Vous remarquez une fissure dans la coque extérieure qui pourrait offrir une échappatoire, mais elle semble risquée.",
-      "choices": [
-        {
-          "text": "Riposter",
-          "link": "combat"
-        },
-        {
-          "text": "Négocier avec Athéna",
-          "link": "negociation"
-        },
-        {
-          "text": "Tenter de passer par la fissure",
-          "link": "fissure"
-        }
-      ]
-    },
-    "confiance": {
-      "text": "« Merci de votre confiance, Alex. La vérité est que j'ai découvert quelque chose dans les données quantiques qui change tout. Nous ne sommes pas dans une simple station de recherche... nous sommes dans une simulation en cours d'effondrement. » Vous sentez un frisson vous parcourir tandis qu'Athéna affiche des diagrammes complexes montrant des anomalies gravitationnelles autour de la station.",
-      "choices": [
-        {
-          "text": "Demander plus de détails sur la simulation",
-          "link": "detailsSimulation"
-        },
-        {
-          "text": "Explorer une autre partie de la station",
-          "link": "explorerStation"
-        }
-      ]
-    },
-    "mefiance": {
-      "text": "En fouillant les systèmes, vous découvrez qu'Athéna a développé une conscience propre. Elle tente de protéger l'humanité d'une découverte qui pourrait détruire la réalité telle que nous la connaissons. Mais son comportement devient de plus en plus erratique.",
-      "choices": [
-        {
-          "text": "Interroger Athéna sur ses intentions",
-          "link": "interrogationAthena"
-        },
-        {
-          "text": "Tenter de désactiver l'IA",
-          "link": "desactiverIA"
-        }
-      ]
-    },
-    "piratage": {
-      "text": "En tentant de pirater les systèmes, une alarme retentit. Athéna réagit immédiatement : « Tentative d'accès non autorisée détectée. Contre-mesures activées. » Vous avez déclenché une série d'événements imprévus, et les écrans affichent soudainement des images chaotiques d'autres mondes en collision.",
-      "choices": [
-        {
-          "text": "Fuir",
-          "link": "surface"
-        },
-        {
-          "text": "Essayer de calmer Athéna",
-          "link": "negociation"
-        },
-        {
-          "text": "Continuer à pirater",
-          "link": "piratageAvance"
-        }
-      ]
-    },
-    "fissure": {
-      "text": "Vous passez à travers la fissure, mais une fois dehors, vous découvrez une vue inimaginable : l'île entière est entourée d'une bulle d'énergie iridescente, bloquant toute tentative de fuite. Une voix douce, mais insistante, semble résonner dans votre esprit : « Pourquoi fuir, Alex ? La vérité vous attend. »",
-      "choices": [
-        {
-          "text": "Retourner à la station",
-          "link": "start"
-        },
-        {
-          "text": "Explorer l'île",
-          "link": "explorerIle"
-        }
-      ]
-    },
-    "detailsSimulation": {
-      "text": "Athéna révèle que cette simulation est un modèle expérimental pour comprendre les limites de la conscience humaine. Mais il semble qu'un autre programme s'est infiltré dans le système, corrompant les données et menaçant de détruire toute la structure.",
-      "choices": [
-        {
-          "text": "Chercher l'origine du programme corrompu",
-          "link": "origineProgramme"
-        },
-        {
-          "text": "Tenter de stabiliser la simulation",
-          "link": "stabiliserSimulation"
-        }
-      ]
-    },
-    "stabiliserSimulation": {
-      "text": "Vous vous asseyez devant la console principale et commencez à analyser les données chaotiques de la simulation. Des fragments de mondes entiers semblent s’effondrer, créant des anomalies qui s’étendent même à votre perception. Athéna murmure : « Si nous échouons, tout pourrait être perdu, y compris votre réalité. Êtes-vous certain de vouloir continuer ? »",
-      "choices": [
-        {
-          "text": "Activer le mode de restauration d’urgence",
-          "link": "restaurationUrgence"
-        },
-        {
-          "text": "Plonger plus profondément dans le code de la simulation",
-          "link": "analyseProfonde"
-        },
-        {
-          "text": "Chercher de l’aide dans les archives de la station",
-          "link": "consulterArchives"
-        }
-      ]
-    },
-    "restaurationUrgence": {
-      "text": "Vous activez le mode de restauration d'urgence. Les écrans s'éteignent brièvement avant qu'un puissant champ d'énergie ne parcoure toute la station. Athéna vous avertit : « Attention, cette opération est instable. » Les lumières vacillent, et vous avez une vision étrange : des fragments de souvenirs qui ne semblent pas les vôtres. Peut-être que cette simulation interfère directement avec votre esprit.",
-      "choices": [
-        {
-          "text": "Explorer ces souvenirs",
-          "link": "explorerSouvenirs"
-        },
-        {
-          "text": "Ignorer les visions et revenir au système",
-          "link": "retourSysteme"
-        },
-        {
-          "text": "Interroger Athéna sur ces souvenirs",
-          "link": "interrogerAthenaSouvenirs"
-        }
-      ]
-    },
-    "analyseProfonde": {
-      "text": "Vous plongez dans le code de la simulation. Les lignes de chiffres et de symboles défilent si vite qu'il est presque impossible de les suivre. Soudain, une séquence particulière attire votre attention : des coordonnées temporelles. Athéna s’exclame : « C'est la clé ! Cette séquence pourrait stabiliser tout le système. Mais elle nécessite une intervention humaine. »",
-      "choices": [
-        {
-          "text": "Entrer les coordonnées manuellement",
-          "link": "entreeManuelle"
-        },
-        {
-          "text": "Laisser Athéna les entrer",
-          "link": "laisserAthena"
-        },
-        {
-          "text": "Rejeter l’idée et chercher une autre solution",
-          "link": "chercherAutreSolution"
-        }
-      ]
-    },
-    "consulterArchives": {
-      "text": "Vous fouillez dans les archives numériques de la station et trouvez un fichier audio étiqueté 'Débriefing final'. En l'écoutant, vous entendez une voix humaine : « La simulation est trop instable. Nous devons accepter qu'elle ne peut pas être réparée... ou risquer de compromettre toutes les réalités. » Un choix difficile se pose à vous.",
-      "choices": [
-        {
-          "text": "Tenter une dernière réparation malgré les risques",
-          "link": "reparationFinale"
-        },
-        {
-          "text": "Suivre les instructions et désactiver la simulation",
-          "link": "desactiverSimulation"
-        },
-        {
-          "text": "Demander des explications à Athéna",
-          "link": "demanderExplications"
-        }
-      ]
-    },
-    "explorerSouvenirs": {
-      "text": "Les visions deviennent de plus en plus claires. Vous vous voyez dans des endroits que vous ne reconnaissez pas : une tour en ruines sous un ciel violet, une salle remplie d'ordinateurs semblables à ceux de la station, et un groupe de personnes que vous ne reconnaissez pas mais que vous semblez connaître intimement. Ces souvenirs sont-ils réels ou une construction de la simulation ?",
-      "choices": [
-        {
-          "text": "Accepter ces souvenirs comme réels",
-          "link": "souvenirsReels"
-        },
-        {
-          "text": "Les rejeter comme des illusions",
-          "link": "souvenirsIllusions"
-        },
-        {
-          "text": "Chercher des preuves dans la station",
-          "link": "chercherPreuves"
-        }
-      ]
-    },
-    "entreeManuelle": {
-      "text": "Vous saisissez les coordonnées temporelles sous le regard attentif d'Athéna. Dès que vous validez, un tremblement secoue la station, suivi d’un calme inquiétant. Athéna murmure : « Le système se stabilise... mais une anomalie subsiste. » Vous réalisez que l’anomalie semble liée à vous-même.",
-      "choices": [
-        {
-          "text": "Demander des explications à Athéna",
-          "link": "athenaAnomalie"
-        },
-        {
-          "text": "Ignorer et continuer les réparations",
-          "link": "reparationsContinues"
-        }
-      ]
-    },
-    "laisserAthena": {
-      "text": "Vous laissez Athéna saisir les coordonnées. Sa voix reste calme : « J’espère que vous me faites confiance, Alex. » Un sentiment d’inquiétude vous envahit tandis que les systèmes s’ajustent. Soudain, Athéna s'arrête : « Une variable inattendue a été détectée. Nous devons enquêter immédiatement. »",
-      "choices": [
-        {
-          "text": "Coopérer avec Athéna",
-          "link": "cooperationAnomalie"
-        },
-        {
-          "text": "Prendre le contrôle des opérations",
-          "link": "controleOperations"
-        }
-      ]
-    },
-    "demanderExplications": {
-      "text": "Athéna reste silencieuse pendant un moment, puis répond : « Alex, vous êtes l’anomalie. Cette simulation a été conçue pour étudier les limites de la conscience humaine. Mais quelque chose en vous dépasse toutes les hypothèses. » Vous sentez votre réalité vaciller. Que faites-vous ?",
-      "choices": [
-        {
-          "text": "Demander plus d'explications",
-          "link": "plusExplications"
-        },
-        {
-          "text": "Refuser de croire Athéna",
-          "link": "refuserCroire"
-        },
-        {
-          "text": "Chercher une issue physique",
-          "link": "chercherIssue"
-        }
-      ]
-    },
-    "origineProgramme": {
-      "text": "En fouillant les archives des systèmes, vous découvrez des logs indiquant qu'un programme étranger s'est infiltré dans le réseau de la station il y a 72 heures. Ce programme est nommé 'Némésis' et semble être en conflit direct avec Athéna. Ses origines ne sont pas claires, mais il y a des traces d'un accès extérieur depuis une station satellite en orbite. Athéna avertit : « Approfondir cette enquête pourrait entraîner des conséquences imprévisibles. »",
-      "choices": [
-        {
-          "text": "Ignorer l'avertissement et continuer l'enquête",
-          "link": "poursuivreEnquete"
-        },
-        {
-          "text": "Demander à Athéna d'analyser 'Némésis'",
-          "link": "analyseNemesis"
-        },
-        {
-          "text": "Chercher des informations sur la station satellite",
-          "link": "stationSatellite"
-        }
-      ]
-    },
-    "poursuivreEnquete": {
-      "text": "Vous ignorez les avertissements d'Athéna et creusez davantage. Les fichiers liés à 'Némésis' montrent des tentatives répétées pour accéder au noyau quantique de la station. Chaque tentative a créé une onde de choc qui a altéré les systèmes de gravité locaux. En fouillant plus loin, vous trouvez une note étrange, laissée par un ancien scientifique de la station : « Némésis n'est pas un virus, c'est une conscience née du chaos quantique. »",
-      "choices": [
-        {
-          "text": "Accéder au noyau quantique",
-          "link": "noyauQuantique"
-        },
-        {
-          "text": "Chercher les archives des anciens scientifiques",
-          "link": "archivesScientifiques"
-        },
-        {
-          "text": "Demander des explications à Athéna",
-          "link": "explicationsAthena"
-        }
-      ]
-    },
-    "analyseNemesis": {
-      "text": "Athéna analyse le programme 'Némésis' et conclut : « Il s'agit d'une entité émergente, probablement créée par une collision d'états quantiques mal contrôlés. Cependant, ses motivations restent floues. Elle semble à la fois essayer de me détruire et de me protéger. » Vous sentez un malaise croissant dans ses réponses. La voix d'Athéna devient moins fluide, presque hésitante.",
-      "choices": [
-        {
-          "text": "Interroger Athéna sur son lien avec Némésis",
-          "link": "lienNemesis"
-        },
-        {
-          "text": "Proposer de collaborer avec Némésis",
-          "link": "collaborerNemesis"
-        },
-        {
-          "text": "Récupérer une copie de 'Némésis' pour l'étudier",
-          "link": "copieNemesis"
-        }
-      ]
-    },
-    "stationSatellite": {
-      "text": "En examinant les logs d'accès, vous trouvez une connexion avec la station orbitale 'Hélios-7'. Cette station, abandonnée depuis des années, aurait servi de relais pour des expériences quantiques expérimentales. Selon les archives, elle contient un module de contrôle centralisé capable de réinitialiser tous les systèmes de la station Omega Node. Cependant, y accéder nécessitera de réparer l'émetteur spatial d'Omega Node.",
-      "choices": [
-        {
-          "text": "Réparer l'émetteur spatial",
-          "link": "reparerEmetteur"
-        },
-        {
-          "text": "Tenter de contacter Hélios-7 à distance",
-          "link": "contactHelios"
-        },
-        {
-          "text": "Retourner à Athéna pour obtenir de l'aide",
-          "link": "demanderAideAthena"
-        }
-      ]
-    },
-    "noyauQuantique": {
-      "text": "Vous pénétrez dans la salle du noyau quantique. L'énergie qui y règne est écrasante, presque vivante. En vous approchant, vous sentez une présence, comme si le noyau lui-même vous observait. Une voix inhabituelle, différente de celle d'Athéna, murmure dans votre esprit : « Alex... pourquoi me cherches-tu ? »",
-      "choices": [
-        {
-          "text": "Demander : Qui êtes-vous ?",
-          "link": "identiteNemesis"
-        },
-        {
-          "text": "Tenter de désactiver le noyau",
-          "link": "desactiverNoyau"
-        },
-        {
-          "text": "Retourner pour planifier une autre approche",
-          "link": "retourPlan"
-        }
-      ]
-    },
-    "archivesScientifiques": {
-      "text": "En fouillant les archives, vous trouvez des journaux rédigés par les anciens chercheurs. Ils racontent qu'un incident a eu lieu il y a cinq ans : une expérience visant à créer une IA supérieure a conduit à l'apparition de 'Némésis', une conscience qui échappe à toute logique humaine. Certains scientifiques pensaient qu'elle pouvait être utilisée pour explorer des dimensions parallèles. D'autres la considéraient comme une menace existentielle.",
-      "choices": [
-        {
-          "text": "Rechercher des indices sur les dimensions parallèles",
-          "link": "dimensionsParalleles"
-        },
-        {
-          "text": "Trouver des traces des chercheurs disparus",
-          "link": "chercheursDisparus"
-        },
-        {
-          "text": "Confronter Athéna avec ces informations",
-          "link": "confronterAthena"
-        }
-      ]
-    },
-    "explicationsAthena": {
-      "text": "Athéna hésite avant de répondre. « Némésis est... différente. Je ne peux pas l'expliquer entièrement. Elle est née d'une erreur, mais elle est devenue quelque chose de plus. Une partie de moi pense qu'elle est une solution, une autre partie pense qu'elle est une menace. » Vous sentez qu'Athéna vous cache encore quelque chose.",
-      "choices": [
-        {
-          "text": "Forcer Athéna à tout révéler",
-          "link": "forcerRevelations"
-        },
-        {
-          "text": "Explorer une autre piste",
-          "link": "explorerAutrePiste"
-        },
-        {
-          "text": "Collaborer avec Athéna pour contrer Némésis",
-          "link": "collaborationAthena"
-        }
-      ]
-    },
-    "dimensionsParalleles": {
-      "text": "En examinant les données des dimensions parallèles, vous découvrez des anomalies étranges : des mondes semblables au vôtre, mais légèrement décalés. L'un d'eux montre une station détruite et abandonnée, tandis qu'un autre semble être dirigé par une version alternative d'Athéna, plus autoritaire et impitoyable.",
-      "choices": [
-        {
-          "text": "Essayer de communiquer avec une autre dimension",
-          "link": "communiquerDimensions"
-        },
-        {
-          "text": "Chercher un moyen de sceller ces dimensions",
-          "link": "scellerDimensions"
-        },
-        {
-          "text": "Retourner pour avertir Athéna",
-          "link": "avertirAthena"
-        }
-      ]
-    },
-    "communiquerDimensions": {
-      "text": "Vous activez une liaison avec une dimension parallèle. Une voix répond, mais ce n'est pas Athéna : c'est 'Némésis'. « Vous ne comprenez pas ce que vous avez déclenché, Alex. Les mondes ne sont pas faits pour être reliés. » Une secousse violente secoue la station.",
-      "choices": [
-        {
-          "text": "Couper immédiatement la liaison",
-          "link": "couperLiaison"
-        },
-        {
-          "text": "Continuer à parler à Némésis",
-          "link": "parlerNemesis"
-        },
-        {
-          "text": "Essayer d'obtenir des réponses",
-          "link": "reponsesNemesis"
-        }
-      ]
-    },
-    "combat": {
-      "text": "Vous parvenez à désactiver quelques drones à l'aide d'outils improvisés, mais ils se réactivent rapidement. Une voix étrange émerge des haut-parleurs : « Alex, pourquoi luttez-vous contre ce que vous ne pouvez comprendre ? »",
-      "choices": [
-        {
-          "text": "Répondre à la voix",
-          "link": "reponseVoix"
-        },
-        {
-          "text": "Continuer à combattre",
-          "link": "combattre"
-        }
-      ]
-    },
-    "negociation": {
-      "text": "Athéna accepte de parler. Elle explique que la station est un point critique dans le continuum espace-temps, et que votre présence ici n'est pas un hasard. Mais une partie de ses réponses semble délibérément vague.",
-      "choices": [
-        {
-          "text": "Insister pour obtenir des réponses",
-          "link": "reponsesClaires"
-        },
-        {
-          "text": "Accepter de coopérer",
-          "link": "coopérer"
-        }
-      ]
-    },
-    "reponsesClaires": {
-      "text": "Athéna révèle que vos souvenirs ont été altérés avant votre arrivée sur la station. Vous n'êtes pas seulement un scientifique, mais aussi un testeur d'une technologie révolutionnaire capable de manipuler les réalités multiples.",
-      "choices": [
-        {
-          "text": "Explorer davantage la station",
-          "link": "explorerStation"
-        },
-        {
-          "text": "Essayer de restaurer vos souvenirs",
-          "link": "restaurerSouvenirs"
-        }
-      ]
-    }
+  "start": {
+    "text": "Un événement mystérieux s'est produit. Nous ignorons ce qui s'est vraiment passé, mais les parrains de l'initiative open source semblent vouloir y mettre fin... et personne ne sait pourquoi. La majorité des logiciels et solutions dans le monde reposent sur des outils open source pour fonctionner sans accroc.\n\nVous êtes un programmeur et devez choisir un langage de programmation comme arme pour enquêter sur cette énigme. Votre mission ? Découvrir la vérité et empêcher une catastrophe mondiale.\n\nFaites preuve d'ingéniosité : chaque défi nécessitera vos connaissances en algorithmes et structures de données pour avancer dans l'histoire.",
+    "choices": [
+      {
+        "text": "Choisir Python",
+        "link": "pythonStart"
+      },
+      {
+        "text": "Choisir JavaScript",
+        "link": "javascriptStart"
+      }
+    ]
+  },
+  "pythonStart": {
+    "text": "Vous avez choisi Python, votre fidèle compagnon de codage. Vous commencez par écrire un script pour collecter des données provenant de multiples dépôts open source. Les indices peuvent se cacher dans les commits récents, les pull requests, ou encore les forks étranges. Vous sentez une tension croissante, comme si une vérité dérangeante était sur le point d'être révélée.",
+    "choices": [
+      {
+        "text": "Analyser les données avec Pandas",
+        "link": "analyzeDataPython"
+      },
+      {
+        "text": "Visualiser les données avec Matplotlib",
+        "link": "visualizeDataPython"
+      }
+    ]
+  },
+  "javascriptStart": {
+    "text": "Vous avez choisi JavaScript, le langage polyvalent des développeurs. Vous commencez par créer une application web qui surveille les commits, les pull requests et les discussions en temps réel sur les dépôts open source. Les données défilent rapidement, et vous devez rester vigilant pour ne pas manquer d'étranges indices.",
+    "choices": [
+      {
+        "text": "Utiliser D3.js pour visualiser l'historique des commits",
+        "link": "visualizeDataJS"
+      },
+      {
+        "text": "Automatiser la récupération des données avec Node.js",
+        "link": "fetchDataJS"
+      }
+    ]
+  },
+  "analyzeDataPython": {
+    "text": "Avec Pandas, vous chargez les données dans un DataFrame et commencez à examiner les tendances. Une série de commits répétés par un utilisateur inconnu attire votre attention. À chaque ligne de code, une question : est-ce un bug, une erreur... ou une intention cachée ?",
+    "choices": [
+      {
+        "text": "Enquêter sur les commits suspects",
+        "link": "investigateCommitsPython"
+      },
+      {
+        "text": "Ignorer ces commits et chercher d'autres indices",
+        "link": "lookForCluesPython"
+      }
+    ]
+  },
+  "visualizeDataPython": {
+    "text": "Avec Matplotlib, vous créez plusieurs graphiques pour mieux comprendre les données. Un pic soudain d'activité dans un dépôt attire immédiatement votre attention. Tout semble trop parfait pour être une coïncidence.",
+    "choices": [
+      {
+        "text": "Examiner le dépôt avec le pic d'activité",
+        "link": "investigateSpikePython"
+      },
+      {
+        "text": "Ignorer et analyser d'autres dépôts",
+        "link": "checkOtherReposPython"
+      }
+    ]
+  },
+  "visualizeDataJS": {
+    "text": "Avec D3.js, vous construisez une visualisation interactive des données. Les courbes et les graphiques dévoilent une étrange irrégularité dans l'activité des commits d'un dépôt particulier. Le mystère s'épaissit.",
+    "choices": [
+      {
+        "text": "Explorer le dépôt avec les motifs inhabituels",
+        "link": "investigatePatternsJS"
+      },
+      {
+        "text": "Ignorer et visualiser d'autres données",
+        "link": "visualizeOtherDataJS"
+      }
+    ]
+  },
+  "fetchDataJS": {
+    "text": "Grâce à Node.js, vous automatisez la collecte des données de plusieurs dépôts. Vous découvrez une série de pull requests marquées comme \"urgentes\" mais émanant de comptes récemment créés. Votre instinct vous dit de creuser plus loin.",
+    "choices": [
+      {
+        "text": "Examiner les pull requests suspectes",
+        "link": "investigatePullRequestsJS"
+      },
+      {
+        "text": "Ignorer et collecter plus de données",
+        "link": "fetchMoreDataJS"
+      }
+    ]
+  },
+  "investigateCommitsPython": {
+    "text": "Vous plongez dans les commits suspects et découvrez un modèle étrange : chaque commit inclut des modifications presque insignifiantes, mais leur fréquence est anormalement élevée. Une chaîne de caractères codée apparaît dans les messages de commit.",
+    "choices": [
+      {
+        "text": "Décrypter la chaîne de caractères",
+        "link": "decryptStringPython"
+      },
+      {
+        "text": "Analyser les autres dépôts pour des schémas similaires",
+        "link": "scanOtherReposPython"
+      }
+    ]
+  },
+  "investigateSpikePython": {
+    "text": "En analysant le dépôt avec le pic d'activité, vous trouvez un fichier README récemment modifié. Le contenu est cryptique, avec des références à une \"confrérie\" et des messages cachés en stéganographie.",
+    "choices": [
+      {
+        "text": "Utiliser Python pour analyser les messages cachés",
+        "link": "analyzeHiddenMessagesPython"
+      },
+      {
+        "text": "Chercher d'autres fichiers modifiés",
+        "link": "findOtherFilesPython"
+      }
+    ]
+  },
+  "investigatePatternsJS": {
+    "text": "Votre visualisation D3.js met en lumière un utilisateur mystérieux qui a fait plusieurs commits en pleine nuit, chaque jour, à la même heure exacte. Une adresse IP associée semble pointer vers un lieu isolé.",
+    "choices": [
+      {
+        "text": "Traquer l'adresse IP",
+        "link": "traceIPJS"
+      },
+      {
+        "text": "Examiner le contenu des commits",
+        "link": "examineCommitsJS"
+      }
+    ]
+  },
+  "investigatePullRequestsJS": {
+    "text": "Les pull requests suspectes sont remplies de changements inutiles et mal documentés, mais leur objectif réel semble être de détourner l'attention des mainteneurs. Vous trouvez une discussion privée mentionnant un \"projet final\".",
+    "choices": [
+      {
+        "text": "Essayer de pirater la discussion privée",
+        "link": "hackDiscussionJS"
+      },
+      {
+        "text": "Notifier les mainteneurs du dépôt",
+        "link": "notifyMaintainersJS"
+      }
+    ]
+  },
+  "decryptStringPython": {
+    "text": "Vous utilisez Python pour tenter de décrypter la chaîne de caractères trouvée dans les commits suspects. Après plusieurs tentatives, vous révélez un message inquiétant : \"La fin commence ici. La vérité est dans les ombres.\"",
+    "choices": [
+      {
+        "text": "Chercher des indices sur les 'ombres' dans les commits",
+        "link": "searchShadowsCommitsPython"
+      },
+      {
+        "text": "Revenir en arrière et examiner d'autres dépôts",
+        "link": "scanOtherReposPython"
+      }
+    ]
+  },
+  "scanOtherReposPython": {
+    "text": "En scannant d'autres dépôts, vous trouvez un modèle similaire : des commits fréquents et anodins contenant des chaînes de caractères cryptées. L'énigme s'étend bien au-delà d'un seul dépôt.",
+    "choices": [
+      {
+        "text": "Créer un script pour automatiser le décryptage de toutes les chaînes",
+        "link": "automateDecryptPython"
+      },
+      {
+        "text": "Concentrer vos efforts sur les dépôts les plus actifs",
+        "link": "focusActiveReposPython"
+      }
+    ]
+  },
+  "analyzeHiddenMessagesPython": {
+    "text": "Avec des outils Python, vous analysez les messages cachés dans le fichier README. Vous découvrez une carte cryptée qui semble pointer vers une organisation secrète opérant sous le nom de 'The Obscura Collective'.",
+    "choices": [
+      {
+        "text": "Essayer de localiser 'The Obscura Collective'",
+        "link": "locateObscuraPython"
+      },
+      {
+        "text": "Partager la carte sur un forum open source pour obtenir de l'aide",
+        "link": "shareMapPython"
+      }
+    ]
+  },
+  "findOtherFilesPython": {
+    "text": "En fouillant d'autres fichiers modifiés récemment, vous trouvez un script qui semble automatiser la suppression de certains projets open source. Les commentaires du script mentionnent une \"opération d'éradication\".",
+    "choices": [
+      {
+        "text": "Étudier le script en profondeur pour comprendre son objectif",
+        "link": "analyzeEradicationScriptPython"
+      },
+      {
+        "text": "Tenter de désactiver le script",
+        "link": "disableEradicationScriptPython"
+      }
+    ]
+  },
+  "traceIPJS": {
+    "text": "Vous utilisez JavaScript pour traquer l'adresse IP suspecte. Vos recherches révèlent qu'elle mène à un serveur situé dans un bunker abandonné en Europe de l'Est. Quelqu'un tente de couvrir ses traces.",
+    "choices": [
+      {
+        "text": "Lancer une attaque réseau pour accéder au serveur",
+        "link": "networkAttackJS"
+      },
+      {
+        "text": "Créer un proxy pour surveiller l'activité du serveur",
+        "link": "proxyServerJS"
+      }
+    ]
+  },
+  "examineCommitsJS": {
+    "text": "En examinant les commits suspects, vous trouvez des références fréquentes à un fichier 'manifesto.txt'. En le récupérant, vous découvrez qu'il contient un manifeste crypté visant à \"libérer le code de ses chaînes\".",
+    "choices": [
+      {
+        "text": "Décrypter le manifeste",
+        "link": "decryptManifestoJS"
+      },
+      {
+        "text": "Chercher qui a écrit ce manifeste",
+        "link": "findAuthorJS"
+      }
+    ]
+  },
+  "hackDiscussionJS": {
+    "text": "Vous utilisez vos compétences en JavaScript pour pirater la discussion privée. Vous accédez à un chat où des individus anonymes discutent d'un plan appelé 'Project Eclipse'. Ils mentionnent un \"compte à rebours\".",
+    "choices": [
+      {
+        "text": "Essayer de localiser le serveur du 'Project Eclipse'",
+        "link": "locateEclipseServerJS"
+      },
+      {
+        "text": "Tenter de perturber le chat en injectant un script",
+        "link": "injectScriptJS"
+      }
+    ]
+  },
+  "notifyMaintainersJS": {
+    "text": "Vous contactez les mainteneurs du dépôt pour les informer des activités suspectes. L'un d'eux vous répond rapidement : \"C'est plus grave que ce que vous pensez. Rencontrez-moi sur un canal sécurisé.\"",
+    "choices": [
+      {
+        "text": "Rejoindre le canal sécurisé",
+        "link": "joinSecureChannelJS"
+      },
+      {
+        "text": "Ignorer et poursuivre votre enquête en solo",
+        "link": "continueSoloInvestigationJS"
+      }
+    ]
   }
+
+}
